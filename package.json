@@ -1,15 +1,26 @@
-import PanelShell from "@/components/PanelShell";
-
-export default function ReceptionPage() {
-  return (
-    <PanelShell title="Reception">
-      <div className="card max-w-md">
-        <p className="text-clinical-900 font-medium mb-1">Reception queue coming next phase</p>
-        <p className="text-sm text-clinical-600">
-          This route is already protected by auth + role-based access. The live
-          patient queue and actions for this panel are built in the next phase.
-        </p>
-      </div>
-    </PanelShell>
-  );
+{
+  "name": "izungo-hms",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "14.2.35",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "@supabase/supabase-js": "^2.45.0",
+    "@supabase/ssr": "^0.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/react": "^18.3.0",
+    "@types/node": "^20.14.0",
+    "tailwindcss": "^3.4.7",
+    "postcss": "^8.4.40",
+    "autoprefixer": "^10.4.19"
+  }
 }
